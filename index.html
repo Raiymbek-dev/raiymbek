@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой полноценный сайт</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Шапка сайта -->
+    <header>
+        <div class="container">
+            <h1>Мой Первый Сайт</h1>
+            <nav>
+                <a href="#">Главная</a>
+                <a href="#">О нас</a>
+                <a href="#">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main>
+        <div class="container">
+            <section class="intro">
+                <h2>Добро пожаловать на наш сайт!</h2>
+                <p>Здесь вы найдёте полезную информацию и интересные факты.</p>
+                <button onclick="showModal()">Узнать больше</button>
+            </section>
+
+            <section class="gallery">
+                <h2>Наша галерея</h2>
+                <div class="images">
+                    <img src="https://via.placeholder.com/300" alt="Изображение 1">
+                    <img src="https://via.placeholder.com/300" alt="Изображение 2">
+                    <img src="https://via.placeholder.com/300" alt="Изображение 3">
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Футер сайта -->
+    <footer>
+        <div class="container">
+            <p>© 2024 Мой сайт. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <!-- Модальное окно -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>О нас</h2>
+            <p>Мы создаем сайты для вашего успеха!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

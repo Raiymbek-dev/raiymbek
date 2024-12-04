@@ -8,7 +8,7 @@
 #task 3.17
 #he format function returns a new string with values inserted into placeholders.
 
-#task 3.18
+#task 3.20
 #The output will show the entire item, ignoring the specified width.
 
 #task.3.19
@@ -35,7 +35,7 @@ print(format(0.457467657, "9.3%"))
 print(format(0.457467657, "<9.3%"))
 
 #task 3.23
-print(format(45, "5d"))
-print(format(45, "<5d"))
-print(format(45, "5x"))
-print(format(45, "<5x"))
+print(format(450, "5d"))
+print(format(450, "<5d"))
+print(format(450, "5x"))
+print(format(450, "<5x"))

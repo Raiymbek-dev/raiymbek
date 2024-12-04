@@ -6,8 +6,8 @@
 # ==  equal to 
 # !=  not equal to
 #Task 4.2
-i = int(True)
-j = int(False)
+i = int(False)
+j = int(True)
 b1 = bool(4)
 b2 = bool(0)
 print("Task #4.2")

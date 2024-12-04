@@ -30,7 +30,7 @@ def calculator():
             except ZeroDivisionError as ERROR:
                 print("Invalid equation\n")
                 print(ERROR)
-                print("\nTry again")
+                print("\nTry again BRO")
                 continue
 
         else:

@@ -1,39 +1,233 @@
 <!DOCTYPE html>
-<html lang=“en”>
+<html lang="ru">
+<style>* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url();
+    color: #333;
+    background: url(https://i.pinimg.com/originals/bd/73/ca/bd73ca8a31b6f4cfe6d2c4adb9dacd05.jpg)
+}
+
+header {
+    background-color: #333333;
+    color: white;
+    padding: 10px 0;
+}
+
+header .logo h1 {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.catalog {
+    padding: 20px;
+}
+
+.catalog h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.product {
+    background-color: rgba(255, 255, 255, 0.726);
+    padding: 20px;
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 8px;
+    height: 200px;
+    object-fit: cover; 
+}
+
+.product h3 {
+    margin: 15px 0;
+    font-size: 18px;
+}
+
+.product p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.product a.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product a.button:hover {
+    background-color: #555;
+}
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins',sans-serif;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 100px;
+            background: #33333383;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 99;
+        }
+        .logo {
+            font-size: 2em;
+            color: #fff;
+            user-select: none;
+        }
+
+        .navigation a {
+            position: relative;
+            font-size: 1.1em;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            margin-left: 40px;
+        }
+       
+        .navigation .btnLogin-popup {
+            width: 130px;
+            height: 50px;
+            background:transparent;
+            border: 2px solid #fff;
+            outline: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1.1em;
+            color: #fff;
+            font-weight: 500;
+            margin-left: 40px;
+            transition: .5s;
+        }
+        .navigation .btnLogin-popup:hover {
+            background: #fff;
+            color: #162938;
+        }
+
+ </style>    
 <head>
-    <meta charset=“UTF-8”>
-    <meta name=“viewport” content=“width=device-width, initial-scale=1.0”>
-    <link rel=“stylesheet” type=“text/css” href=“style.css”> 
-    <link href=“https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css” rel=“stylesheet” integrity=“sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC” crossorigin=“anonymous”>   
-    <title>Roar Online Store</title>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-</head>
 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internet Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head> 
 <body>
+        <header>
+            <h2 class="logo">Logo</h2>
+            <nav class="navigation">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Service</a>
+                <a href="#">Contact</a>
+                <button class="btnLogin-popup">Login</button>
+                <a href="cart.html">Cart</a>
+                <li><a href="cart.html"></a></li>
+            </nav>
+        </header>
+    
+    <section class="catalog">
+        <h2>Catalog</h2>
+        <div class="products">
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD82iKjtK-DZpTQUt_49KpVFGlbSBKEBgzLg&s" alt="product 1">
+                <h3>Elden Ring 1</h3>
+                <p>Elden Ring takes place in the Lands Between, a realm blessed by entities called Outer Gods...</p>
+                <p><strong>Price:</strong> 17 999₸</p>
+                <a href="https://store.steampowered.com/app/1743720/Elden_Ring/" class="button" >More details</a>
+            </div>
 
+            <div class="product">
+                <img src="https://deadbydaylight.com/static/c3f2458c3a5bca701cb4ccc96f15cf66/653d1/dbd_keyart_tab_34c48816bb.jpg" alt="product 2">
+                <h3>Dead by Daylight</h3>
+                <p>Dead by Daylight is a multiplayer horror game where one player takes on the role of the savage Killer...</p>
+                <p><strong>Price:</strong> 6 177₸</p>
+                <a href="https://store.steampowered.com/app/381210/Dead_by_Daylight/" class="button" >More details</a>
+            </div>
 
-    <div class="wrapper">
-        <form action="">
-            <h1>Login</h1>
-            <div class="input-box">
-                <input type="text" placeholder="Username"
-                required>
-                <i class='bx bxs-user'></i>
+            <div class="product">
+                <img src="https://i.playground.ru/e/B_iMPjAeblsKxXYajh0nig.jpeg" alt="product 3">
+                <h3>Euro Truck Simulator 2</h3>
+                <p>Euro Truck Simulator 2 is a truck driving simulator with elements of a business simulation game...</p>
+                <p><strong>Price:</strong> 5 200₸</p>
+                <a href="https://store.steampowered.com/app/227300/Euro_Truck_Simulator_2/" class="button" >More details</a>
             </div>
-            <div class="input-box">
-                <input type="password" placeholder="password"
-                required>
-                <i class='bx bxs-lock-alt' ></i>
-            </div>
-            <div class="remember-forgot">
-                <label><input type="checkbox"> Remember me</
-                label>
-                <a href="#">Forgot password?</a>
-            </div>
-            <button type="submit" class="btn">Login</button>
 
-            <div class="register-link">
-                <p>Dont have  an account?<a href="#">Register</a></p>
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNsxcI3qx3sh-M0rBpgvqY6Y5NhwwIMb_9ag&s" alt="product 4">
+                <h3>Phasmophobia</h3>
+                <p>Phasmophobia is a psychological horror game where you investigate paranormal activity...</p>
+                <p><strong>Price:</strong> 5 200₸</p>
+                <a href="https://store.steampowered.com/app/739630/Phasmophobia/" class="button" >More details</a>
             </div>
-        </form>
-    </div>
+
+            <div class="product">
+                <img src="https://images.gog-statics.com/153869f043cb50f984364cee8155827fda8eb6ab4fa08d0759d3aac30b686ba6.jpg" alt="product 5">
+                <h3>STALKER 2</h3>
+                <p>Experience one-of-a-kind gameplay featuring first-person shooter, immersive sim, and horror...</p>
+                <p><strong>Price:</strong> 19 000₸</p>
+                <a href="https://store.steampowered.com/app/1643320/STALKER_2_Heart_of_Chornobyl/" class="button" >More details</a>
+            </div>
+
+            <div class="product">
+                <img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/570/header.jpg?t=1731544174" alt="product 6">
+                <h3>Dota 2</h3>
+                <p>Sometimes free is more expensive than paid...</p>
+                <p><strong>Price:</strong> Free</p>
+                <a href="https://store.steampowered.com/app/570/Dota_2/" class="button" >More details</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
